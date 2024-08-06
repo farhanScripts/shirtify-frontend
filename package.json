@@ -1,0 +1,14 @@
+{
+  "name": "shirtify-frontend",
+  "version": "1.0.0",
+  "description": "front-end-for-shirtify",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Farhan Putra",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.7"
+  }
+}
