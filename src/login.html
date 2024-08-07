@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Login | Shirtify</title>
+  </head>
+  <body
+    class="m-0 p-0 h-screen w-screen box-border flex items-center justify-center md:flex-row bg-softBeige"
+  >
+    <div
+      id="logo-container"
+      class="w-5/12 h-screen flex items-center mr-[50px] px-[50px]"
+    >
+      <img
+        src="assets/shirtify-high-resolution-logo-transparent.png"
+        alt=""
+        class="w-full object-contain"
+      />
+    </div>
+    <div
+      id="login-form container"
+      class="w-[700px] h-[450px] shadow-xl flex flex-col items-center justify-center bg-richGreen text-white p-[30px] rounded-xl"
+    >
+      <h1 class="md:text-[40px] font-bold">Login</h1>
+      <p class="md:text-[20px] my-3">Safely To Your Account</p>
+      <form action="#" method="POST" class="w-full px-10">
+        <div class="flex flex-col gap-2 mb-5" id="form-group">
+          <label for="Email">Email</label>
+          <input
+            type="email"
+            id="Email"
+            name="email"
+            required
+            class="py-2 text-[16px] rounded-lg font-medium font-poppins text-black px-5"
+            placeholder="example@email.com"
+          />
+          <p id="error-messsage" hidden></p>
+        </div>
+        <div class="flex flex-col gap-2 mb-5" id="form-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"
+            placeholder="password"
+            required
+            class="py-2 text-[16px] rounded-lg font-medium font-poppins text-black px-5"
+          />
+          <p id="error-message" hidden></p>
+        </div>
+        <button
+          type="submit"
+          class="bg-softBeige text-richGreen font-medium text-[20px] w-full py-2 my-5 rounded-xl"
+        >
+          Sign In
+        </button>
+      </form>
+      <a href="#register">Don't have account? Register</a>
+    </div>
+  </body>
+</html>

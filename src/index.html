@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./output.css" />
-    <title>Document</title>
+    <title>Shirtify</title>
   </head>
   <body class="m-0 p-0 box-border">
     <header
       id="header"
-      class="w-screen h-[80px] bg-softBeige flex flex-column justify-between md:items-center md:px-8 md:py-4 md:flex-row"
+      class="h-[80px] bg-softBeige flex flex-column justify-between md:items-center md:px-8 md:py-4 md:flex-row"
     >
       <div id="logo-container" class="w-[100px]">
         <a href="#" id="logo">
@@ -67,7 +67,7 @@
         </ul>
       </nav>
     </header>
-    <main class="font-dmsans">
+    <main class="font-dmsans bg-lightGrey">
       <section
         id="hero-section"
         class="h-[700px] flex md:flex-row items-end justify-between px-[50px] pb-[50px] bg-hero-pattern bg-no-repeat bg-cover bg-top text-softBeige"
@@ -106,7 +106,7 @@
 
         <div
           id="product-container"
-          class="h-[600px] w-screen flex overflow-x-auto flex-shrink-0"
+          class="h-[600px] flex overflow-x-auto flex-shrink-0"
         >
           <!-- <div id="card-container" class="h-[500px] w-[400px] m-5">
             <a href="#detailProduct">
@@ -143,7 +143,7 @@
         </div>
       </section>
 
-      <section id="explore-collection" class="h-[500px]">
+      <section id="explore-collection">
         <div
           id="title-container"
           class="flex justify-between items-center px-5"
@@ -158,20 +158,187 @@
           </p>
         </div>
 
-        <div id="collection-container" class="w-screen bg-orange-500 h-fit">
-          <div id="category-container" class="w-[500px]">
-            <a href="#" class="inline-block"
-              ><img
+        <div id="collection-container" class="m-5 flex md:flex-row gap-2">
+          <div id="card-collection" class="w-[600px] h-[500px] relative flex-1">
+            <a href="#detail">
+              <img
                 src="assets/men_collection_photo.jpg"
+                class="w-full h-full object cover"
                 alt=""
-                class="h-full w-full object-contain"
-            /></a>
+              />
+            </a>
+            <p
+              class="absolute text-2xl font-bold text-black inline-block py-4 px-7 bg-softBeige rounded-3xl bottom-[20px] right-[20px]"
+            >
+              Man
+            </p>
           </div>
+          <div id="card-collection" class="w-[900px] h-[500px] relative">
+            <a href="#detail">
+              <img
+                src="assets/women_collection_photo.jpg"
+                class="w-full h-full object-cover object-top"
+                alt=""
+              />
+            </a>
+            <p
+              class="absolute text-2xl font-bold text-black inline-block py-4 px-7 bg-softBeige rounded-3xl bottom-[20px] right-[20px]"
+            >
+              Women
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="tagline-section" class="my-[50px] mx-5">
+        <p class="text-[35px] font-medium font-poppins text-center">
+          "We Believe that looking good and feeling good are not mutually
+          exclusive, so we've reimagined the everyday wardrobe."
+        </p>
+      </section>
+
+      <section id="to-our-store" class="flex h-[600px] mx-5">
+        <div id="store-image" class="w-[800px] grow">
+          <img
+            src="assets/our_store_background.jpg"
+            alt=""
+            class="w-full h-full object-cover object-center"
+          />
+        </div>
+
+        <div id="store-info" class="w-[400px] p-[25px]">
+          <h3 class="md:text-[60px] font-dmsans font-bold leading-2">
+            TO OUR STORE.
+          </h3>
+          <p class="md:text-[30px] text-justify my-5">
+            The first Shirtify Store opened it doors in 1992, right by the
+            canada sesside. in Toronto to be precise
+          </p>
+          <a
+            href="#"
+            class="inline-block py-3 px-5 border border-black text-black hover:text-white hover:bg-black transition ease-in duration-500 font-poppins text-xl rounded-full my-5"
+            >Find a store</a
+          >
+        </div>
+      </section>
+
+      <section id="follow-us" class="mt-5">
+        <div id="follow-us-container" class="text-center">
+          <h3 class="md:text-[40px] font-poppins font-bold">Follow Us</h3>
+          <p class="md:text-xl font-poppins font-bold my-3">@shirtify</p>
+        </div>
+
+        <div
+          id="gallery-content"
+          class="h-[400px] flex space-x-16 animate-loop-scroll overflow-hidden py-[30px]"
+        >
+          <img
+            loading="lazy"
+            src="assets/gallery_1.jpg"
+            alt=""
+            class="w-[300px]"
+          />
+          <img
+            loading="lazy"
+            src="assets/gallery_2.jpg"
+            alt=""
+            class="w-[300px]"
+          />
+          <img
+            loading="lazy"
+            src="assets/gallery_3.jpg"
+            alt=""
+            class="w-[300px]"
+          />
+          <img
+            loading="lazy"
+            src="assets/gallery_4.jpg"
+            alt=""
+            class="w-[300px]"
+          />
+          <img
+            loading="lazy"
+            src="assets/gallery_5.jpg"
+            alt=""
+            class="w-[300px]"
+          />
+          <img
+            loading="lazy"
+            src="assets/gallery_6.jpg"
+            alt=""
+            class="w-[300px]"
+          />
+          <img
+            loading="lazy"
+            src="assets/gallery_7.jpg"
+            alt=""
+            class="w-[300px]"
+          />
         </div>
       </section>
     </main>
 
-    <footer></footer>
+    <footer
+      class="h-[600px] grid grid-rows-footer grid-cols-4 bg-softBeige border-t-4 border-orange-2"
+    >
+      <div
+        class="col-span-2 h-fit flex flex-col gap-4 items-center justify-center p-5"
+      >
+        <p class="text-justify font-poppins font-medium text-[20px]">
+          We're convinced about the long lasting quality of our clothes and
+          believe that all Ageman garments deserve second life.
+        </p>
+        <div id="social-media-container" class="w-full flex gap-4">
+          <a href="#">
+            <img
+              src="assets/social_media/Facebook_Logo_2023.png"
+              alt=""
+              class="w-[50px]"
+            />
+          </a>
+          <a href="">
+            <img
+              src="assets/social_media/Instagram_icon.webp"
+              alt=""
+              class="w-[50px]"
+            />
+          </a>
+          <a href="#">
+            <img
+              src="assets/social_media/x_logo.webp"
+              alt=""
+              class="w-[50px]"
+            />
+          </a>
+        </div>
+      </div>
+
+      <div
+        class="col-start-3 col-end-5 h-fit p-5 flex items-start justify-evenly gap-5"
+      >
+        <div id="nav-section" class="flex flex-col font-medium text-[20px]">
+          <a href="#about" class="hover:font-bold">About</a>
+          <a href="#store" class="hover:font-bold">Store</a>
+          <a href="#contactUs" class="hover:font-bold">Contact Us</a>
+        </div>
+        <div id="clothing" class="flex flex-col font-medium text-[20px]">
+          <a href="#man" class="hover:font-bold">Man Clothing</a>
+          <a href="#woman" class="hover:font-bold">Woman Clothing</a>
+        </div>
+        <div id="help" class="flex flex-col font-medium text-[20px]">
+          <a href="#help" class="hover:font-bold">Help</a>
+          <a href="#faq" class="hover:font-bold">FaQ</a>
+        </div>
+      </div>
+
+      <div id="footer-logo" class="row-start-2 row-end-3 col-span-4 py-5">
+        <img
+          src="assets/shirtify-high-resolution-logo-transparent.png"
+          alt=""
+          class="w-full h-full object-contain"
+        />
+      </div>
+    </footer>
 
     <script src="index.js"></script>
   </body>
