@@ -10,22 +10,26 @@
     class="m-0 p-0 h-screen w-screen box-border flex items-center justify-center md:flex-row bg-softBeige"
   >
     <div
-      id="logo-container"
-      class="w-5/12 h-screen flex items-center mr-[50px] px-[50px]"
+      id="login-form-container"
+      class="w-full md:w-[600px] h-[700px] shadow-xl flex flex-col items-center justify-center bg-richGreen text-white p-[30px] rounded-xl"
     >
-      <img
-        src="assets/shirtify-high-resolution-logo-transparent.png"
-        alt=""
-        class="w-full object-contain"
-      />
-    </div>
-    <div
-      id="login-form container"
-      class="w-[700px] h-[450px] shadow-xl flex flex-col items-center justify-center bg-richGreen text-white p-[30px] rounded-xl"
-    >
-      <h1 class="md:text-[40px] font-bold">Login</h1>
-      <p class="md:text-[20px] my-3">Safely To Your Account</p>
+      <h1 class="md:text-[40px] font-bold">Create Account</h1>
+      <p class="md:text-[20px] my-3">Create account and start shopping :)</p>
       <form action="#" method="POST" class="w-full px-10">
+        <div class="flex flex-col gap-2 mb-5" id="form-group">
+          <label for="name">Fullname</label>
+          <div class="flex bg-white rounded-xl px-5">
+            <img src="assets/icon/ic-profile.svg" alt="" class="w-[30px]" />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              class="py-3 text-[16px] w-full rounded-lg font-medium font-poppins text-black px-5 focus:outline-none"
+              placeholder="Your Fullname"
+            />
+          </div>
+        </div>
         <div class="flex flex-col gap-2 mb-5" id="form-group">
           <label for="Email">Email</label>
           <div class="flex bg-white rounded-xl px-5">
@@ -55,6 +59,21 @@
               class="py-3 text-[16px] w-full rounded-lg font-medium font-poppins text-black px-5 focus:outline-none"
             />
           </div>
+        </div>
+        <div class="flex flex-col gap-2 mb-5" id="form-group">
+          <label for="password">Confirm Password</label>
+          <div class="flex bg-white rounded-xl px-5">
+            <img src="assets/icon/ic-lock.svg" alt="" class="w-[30px]" />
+            <input
+              type="password"
+              id="confirm-password"
+              name="confirm-password"
+              pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"
+              placeholder="password"
+              required
+              class="py-3 text-[16px] w-full rounded-lg font-medium font-poppins text-black px-5 focus:outline-none"
+            />
+          </div>
           <p id="error-message" hidden></p>
         </div>
         <button
@@ -64,7 +83,18 @@
           Sign In
         </button>
       </form>
-      <a href="./register.html">Don't have account? Register</a>
+      <a href="#register">Don't have account? Register</a>
+    </div>
+
+    <div
+      id="logo-container"
+      class="hidden md:flex md:w-5/12 h-screen items-center justify-center mr-[50px] px-[50px]"
+    >
+      <img
+        src="assets/shirtify-high-resolution-logo-transparent.png"
+        alt=""
+        class="w-full object-contain"
+      />
     </div>
   </body>
 </html>
